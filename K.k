@@ -10,7 +10,7 @@ pow: {[a;n] n{a*x}/1}
 memo: {[f] d:[]; {$[x in !d; 0N; d[x]:f[x]]; d[x] }}
 
 P1: {+/&|/~x!\:!y} [3 5; 1000]
-P4: *-1# {&/{x=|x}($x)} # ?*/{!x,x}100
+P4: *-1# {{x~|x}($x)} # ?*/{!x,x}100
 P5: {*/((primes (#x)) pow' x)} (|/ makeSqr (factorize' (2_!21)))
 /P14: 
 naiveCltz: {#{~x=1}{$[2!x;1+3*x;x%2]}\x}
